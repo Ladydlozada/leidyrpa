@@ -41,6 +41,18 @@
   .wrap{max-width:1040px; margin:0 auto; padding:0 24px;}
   section{padding:88px 0;}
 
+
+  /* ---------- Tienda (franja que lleva a la tienda) ---------- */
+  .tienda-band{padding:64px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--bg-panel);}
+  .tienda-band .wrap{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px;}
+  .tienda-band .tb-text{flex:1 1 380px; min-width:0;}
+  .tienda-band .section-tag{margin:0 0 10px;}
+  .tienda-band h2{font-size:clamp(1.4rem,3vw,1.9rem); margin:0 0 10px; line-height:1.25;}
+  .tienda-band p{color:var(--text-muted); margin:0; max-width:60ch;}
+  .btn-tienda{display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--green); border:1px solid var(--green); font-weight:600; padding:16px 28px; border-radius:999px; text-decoration:none; transition:background .15s ease, color .15s ease;}
+  .btn-tienda:hover{background:var(--green); color:#0b1a05;}
+  footer a{color:var(--green);}
+
   /* ---------- Botones ---------- */
   .btn{
     display:inline-flex; align-items:center; gap:10px;
@@ -399,10 +411,21 @@
   </div>
 </section>
 
+<section class="tienda-band" id="tienda">
+  <div class="wrap">
+    <div class="tb-text">
+      <p class="section-tag">tienda</p>
+      <h2>¿Preferís hacerlo vos? Plantillas y curso a precio solidario.</h2>
+      <p>Un pack de Excel para controlar gastos y facturas (US$ 5) y un curso para aprender a automatizar tus tareas administrativas con Python (US$ 10).</p>
+    </div>
+    <a class="btn-tienda" href="https://ladydlozada.github.io/leidyrpa/tienda/">Ver la tienda →</a>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div class="mono">leidy_rpa — automatización con python</div>
-    <div class="mono">© 2026</div>
+    <div class="mono"><a href="https://ladydlozada.github.io/leidyrpa/tienda/">tienda</a> · © 2026</div>
   </div>
 </footer>
 
